@@ -4,12 +4,12 @@ server = express();
 
 server.use(express.static(__dirname + "/Bootstrap5")); //Web root
 
-server.get("/",function(req,res){ //web root
- 	res.send("Hello, World!"); //回傳固定內容
- });
+// server.get("/",function(req,res){ //web root
+//  	res.send("Hello, World!"); //回傳固定內容
+//  });
 
- server.get("/contact",function(req,res){ //contact page
-    res.send("This is about page"); //回傳固定內容
+ server.get("/contact",(req,res)=>{ //contact page
+   
  });
  //server.get("*",function(req,res){ //other pages
  	//res.send("Page not found", 404);
